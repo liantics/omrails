@@ -129,7 +129,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.1)
-  devise
+  devise (~> 2.2.3)
   faker (~> 1.1.2)
   jquery-rails
   masonry-rails (~> 0.1.8)

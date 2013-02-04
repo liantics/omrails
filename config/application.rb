@@ -61,5 +61,9 @@ module Omrails
 
     # Recommended by 'Devise' installation to prevent errors when uploading to Heroku
     config.assets.initialize_on_precompile = false
+
+    #Make Heroku stop crashing on the Devise install with "uninitialized constant Devise (NameError)"
+    require 'devise'
+
   end
 end

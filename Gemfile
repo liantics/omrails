@@ -19,7 +19,7 @@ group :assets do
   gem 'paperclip', '~> 3.0'
   gem "masonry-rails", "~> 0.1.8"
   gem "faker", "~> 1.1.2"
-  gem 'devise'
+  gem "devise", "~> 2.2.3"
 
 
 end
