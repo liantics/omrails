@@ -7,15 +7,17 @@
 	  <%= csrf_meta_tags %>
 
 	</head>
-	<body>
+	
+		<% flash.each do |key, value| %>
+   			<%= content_tag(:div, value, class: "alert alert-#{key}") %>
+		<% end %>
+<body>
 		<%= render 'layouts/header' %>
 
 		<div class="container"</div>
 			<%= yield %>
 			<%= render 'layouts/footer' %>
 		</div>
-	 <! suggested by the devise documentation>	
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+	 
 	</body>
 </html>

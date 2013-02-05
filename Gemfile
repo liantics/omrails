@@ -20,6 +20,7 @@ group :assets do
   gem "masonry-rails", "~> 0.1.8"
   gem "faker", "~> 1.1.2"
   gem "devise", "~> 2.2.3"
+  gem "webrick", "~> 1.3.1"
 
 
 end
