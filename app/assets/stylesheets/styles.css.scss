@@ -17,7 +17,7 @@ $btnPrimaryBackgroundHighlight: lightgreen;
 /*import bootstrap - line 17*/
 @import 'bootstrap';
 
-/*Reduce nav bar spacing from default*/
+/*Reduce nav bar spacing from default - not sure how*/
 
 
 /*Set a large padding at page top to accomodate fixed-to-top nav bar - line 19*/
@@ -29,8 +29,12 @@ body{
       padding-right: 0px;   
       }  
 
-   .marketing-byline, h1 {
+   .marketing-byline, h1, h2 {
    	  text-align: center;
+   }
+
+   .jumbotron, masthead {
+   	 background-color: gray;
    }
 }
 
