@@ -6,9 +6,6 @@
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
 
-	  <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-
 	</head>
 	<body>
 		<%= render 'layouts/header' %>
@@ -17,6 +14,8 @@
 			<%= yield %>
 			<%= render 'layouts/footer' %>
 		</div>
-
+	 <! required by the devise documentation>	
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 	</body>
 </html>

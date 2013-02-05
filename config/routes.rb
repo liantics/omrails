@@ -1,6 +1,16 @@
 Omrails::Application.routes.draw do
   root :to => 'pages#home'
-  get 'about' => 'pages#about'
+  
+  get 'learnmore' => 'pages#learnmore'
+
+  get 'createproject' => 'pages#createproject'
+
+  get 'projectlist' => 'pages#projectlist'
+
+  get 'successstories' => 'pages#successstories'
+
+  get 'resources' => 'pages#resources'
+
 
 
   # The priority is based upon order of creation:
