@@ -1,23 +1,38 @@
 $baseFontFamily:Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
 
+/*Navbar tweaks - line 4*/
+$navbarBackground: lightgreen;
+$navbarBackgroundHighlight: green;
+$navbarLinkBackgroundHover: lightgreen;
+$navbarBrandColor: white;
+$navbarLinkColor: white;
+
+
+/*Gret big button tweaks - line 11*/
 $btnPrimaryBackground: green;
+$btnPrimaryBackgroundHighlight: lightgreen;
 
 
+/*import bootstrap - line 11*/
 @import 'bootstrap';
 
+/*Set a large padding at page top to accomodate fixed-to-top nav bar - line 19*/
 body{
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
+/*import the responsive bootstrap layout - line 24*/
 @import 'bootstrap-responsive';
 
+/*kill the box shadow on the nav bar - line 27
 .navbar-inner{
 
 	@include box-shadow(none !important);
 	border:0;
-}
+}*/
 
+/*specify footer margin, text color, and link color - line 34*/
 .footer {
 	margin-top: 50px;
 	color:$grayLight;
