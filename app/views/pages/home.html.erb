@@ -1,12 +1,19 @@
-<div class="jumbotron masthead">
-	<h1>You Can be a Hero!</h1>
-			<p>
-			You found the home page for the <%= link_to "One Month Rails", "http://onemonthrails.com"%> application. 
-			</p>
-			<p>
-				<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %> 
-			</p>
-</div>
+<%if user_signed_in?%>
+	<div class="jumbotron masthead">
+			<h1>Welcome, Hero!</h1>
+	</div>
+              
+ <%else%>
+	 <div class="jumbotron masthead">
+		<h1>You Can be a Hero!</h1>
+				<p>
+				You found the home page for the <%= link_to "One Month Rails", "http://onemonthrails.com"%> application. 
+				</p>
+				<p>
+					<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %> 
+				</p>
+	</div>
+<%end%>
 
 
 
