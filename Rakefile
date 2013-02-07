@@ -4,5 +4,5 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-require 'rake/simpleform'
+require 'rake/simple_form'
 Omrails::Application.load_tasks
