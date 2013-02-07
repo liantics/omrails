@@ -21,6 +21,6 @@ group :assets do
   gem "faker", "~> 1.1.2"
   gem "devise", "~> 2.2.3"
   gem "webrick", "~> 1.3.1"
-  gem 'simple_form'
+  gem 'simple_form', "~>2.0.4"
 
 end
