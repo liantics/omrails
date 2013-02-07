@@ -65,5 +65,8 @@ module Omrails
     #Make Heroku stop crashing on the Devise install with "uninitialized constant Devise (NameError)"
     require 'devise'
 
+    #Make Heroku stop crashing on the Simple Form install with "uninitialized constant Devise (NameError)"
+    require 'simple_form'
+
   end
 end
