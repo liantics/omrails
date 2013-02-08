@@ -1,22 +1,213 @@
 <%if user_signed_in?%>
 	<div class="jumbotron masthead">
 			<h1>Welcome, Hero!</h1>
-			<p>thumbnails of your projects, and projects you've funded go here</p>
-			<p>Featured Project Scroller goes here</p>
-			<p>Thumbnails for categories go here</p>
 	</div>
+			<p>thumbnails of your projects, and projects you've funded go here</p>
+			<ul class="thumbnails">
+	    <li class="span6">
+	    	<h2>Your Projects</h2>
+		    <a href="#" class="thumbnail">
+		    Your Project 1<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p><b>Title</b></p>
+
+		    <a href="#" class="thumbnail">
+		    Your Project 2<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p><b>Title</b></p>
+
+	    </li>
+
+	    <li class="span6">
+	    	<h2>Projects You've Funded</h2>
+		    <a href="#" class="thumbnail">
+		    You Funded 1<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    Sustainable energy (solar)
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p><b>Title</b></p>
+
+
+		    <a href="#" class="thumbnail">
+		    You Funded 2<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p><b>Title</b></p>
+
+
+		    <a href="#" class="thumbnail">
+		    You Funded 3<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		   	<p><b>Title</b></p>
+
+
+	    </li>
+
+</ul>
+	
+
               
  <%else%>
 	 <div class="jumbotron masthead">
 		<h1>You Can be a Hero!</h1>
 				<p>
-				You found the home page for the <%= link_to "One Month Rails", "http://onemonthrails.com"%> application. 
+				Fund Projects, Save the World<sup>*</sup> 
 				</p>
 				<p>
-					<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %> 
+				<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 				</p>
 	</div>
 <%end%>
 
+
+
+
+<div class="hero-unit">
+	<h1>Featured Projects</h1>
+	<p class="marketing-byline"> <i>Check Out These Amazing Projects! </i></p>
+</div>
+
+ <h1>[Featured Project Scroller goes here]</h1>
+  <ul class="pager">  
+  <li>  
+    <a href="#">Previous</a>  
+  </li>  
+  <li>  
+    <a href="#">Next</a>  
+  </li>  </ul> 
+
+<div class="hero-unit">
+	<h1>More Cool Projects</h1>
+	<p class="marketing-byline"> <i>Picture Yourself Making Someone's Day, when you Push a Project Over the Funding Finish Line!</i></p>
+	<p><p>
+				<%= link_to "See All Projects", '#', class: "btn btn-primary btn-large pull-right" %>
+				</p></p>
+</div>
+
+<ul class="thumbnails">
+	    <li class="span4">
+	    	<h2>Efficiency</h2>
+		    <a href="#" class="thumbnail">
+		    Efficiency 1<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 1: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 1: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Efficiency 2<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 2: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Efficiency 3<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 3: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+	    </li>
+	    <li class="span4">
+	    	<h2>Renewable Energy</h2>
+		    <a href="#" class="thumbnail">
+		 		Renewable Project 1<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 2: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Renewable Project 2<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 2: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Renewable Project 3<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 3: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+	    </li>
+
+	    <li class="span4">
+	    	<h2>Nearly Funded</h2>
+		    <a href="#" class="thumbnail">
+		    Finish Line 1<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    Sustainable energy (solar)
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 3: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Finish Line 2<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 2: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 2: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+		    <a href="#" class="thumbnail">
+		    Finish Line 3<br>
+		 		&nbsp;<br>
+		 		&nbsp;
+		    <img data-src="holder.js/300x200" alt="">
+		    </a>
+		    <p>Challenge 3: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua.  </p>
+		    <p>Solution 3: Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur. </p>
+
+	    </li>
+</ul>
 
 
