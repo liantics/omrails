@@ -16,7 +16,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'bootstrap-sass', '~> 2.2.2.0'
-  gem 'paperclip', '~> 3.0'
+  gem 'paperclip', '~> 3.4.0'
   gem "masonry-rails", "~> 0.1.8"
   gem "faker", "~> 1.1.2"
   gem "devise", "~> 2.2.3"
