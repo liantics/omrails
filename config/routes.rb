@@ -16,7 +16,7 @@ Omrails::Application.routes.draw do
 
   get 'resources' => 'pages#resources'
 
-
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

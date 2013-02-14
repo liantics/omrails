@@ -1,20 +1,11 @@
-<h1>Listing pins</h1>
+<div style="padding-top:10px">
+	<p>
+		<%= link_to "Add Image +", new_pin_path, class: "btn btn-primary btn-large" %>
+	</p>
+</div>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <%= render @pins %>
-  </tbody>
-</table>
+<div id="pins">
+  <%= render @pins %>
+</div>
+ 
 
-<br />
-
-<%= link_to 'New Pin', new_pin_path %>

@@ -1,6 +1,12 @@
 <h1>Editing pin</h1>
 
+<p>Current Image:</p>
+<p>
+	<%= image_tag @pin.image (:medium) %>
+</p>
+
 <%= render 'form' %>
 
 <%= link_to 'Show', @pin %> |
 <%= link_to 'Back', pins_path %>
+

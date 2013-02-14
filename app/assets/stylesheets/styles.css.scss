@@ -24,38 +24,34 @@ $btnPrimaryBackgroundHighlight: lightgreen;
 /*Set a large padding at page top to accomodate fixed-to-top nav bar - line 19*/
 body{
 	padding-top: 80px;
+}
 
-	 .nav li {  
+.nav li {  
       padding-left: 0px; 
       padding-right: 0px;   
       }  
 
    .marketing-byline, h1, h2 {
-   	  text-align: center;
+      text-align: center;
    }
 
    
-   	.jumbotron {
-   	padding-top:-40px;
+    .jumbotron {
+    padding-top:-40px;
     position: relative;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(0, 0, 0, 0.075);
     background: linear-gradient(45deg, rgb(2, 54, 2) 0%, rgb(6, 153, 6) 100%) repeat scroll 0% 0% transparent;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2) inset, 0px -3px 7px rgba(0, 0, 0, 0.2) inset;
-	}
+  }
 
 
-	.masthead{
-		padding: 70px 0px 80px;
-		margin-bottom: 0px;
-		color: rgb(255, 255, 255);
-	}
+  .masthead{
+    padding: 70px 0px 80px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+  }
 
-
-   .jumbotron {
-   	 background-color: gray;
-   }
-}
 
 /*import the responsive bootstrap layout - line 24*/
 @import 'bootstrap-responsive';
@@ -67,6 +63,45 @@ body{
 	border:0;
 }*/
 
+/*Used by jQuery Masonry for "pinterest style" self-adjusting image block layout */
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  font-size: 11px;
+  color: #000;
+  line-height: 1.4em;
+  float: left;
+  background-color: grayLight;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #458B00;
+  width: 214px;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.box a {
+  color: #666;
+  text-decoration: underline;
+  padding-left: 2px;
+}
+.box a:hover{
+  color: #333;
+}
+
+.description {
+  margin: 10px 0px 5px;
+  color: #000;
+}
+
 /*specify footer margin, text color, and link color - line 34*/
 .footer {
 	margin-top: 50px;
@@ -74,5 +109,7 @@ body{
 	a {
 		color: $gray;
 	}
+
+
 
 }
