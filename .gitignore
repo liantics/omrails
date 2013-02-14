@@ -19,3 +19,6 @@ doc/
 .project
 .DS_Store
 .idea
+
+#Ignore the random images uploaded via Paperclip for testing during development
+/public/system
