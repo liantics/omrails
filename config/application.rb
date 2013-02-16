@@ -72,10 +72,10 @@ module Omrails
     require 'paperclip'
 
     # faker app enables creating large numbers of fake names for site testing
-    # require 'faker'
+    require 'faker'
 
     # Masonry allows mixed column sizes to be arrayed neatly, automatically, on the page.
-    # require 'masonry-rails'
+    require 'masonry-rails'
 
   end
 end
