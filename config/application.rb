@@ -68,11 +68,14 @@ module Omrails
     #Make Heroku stop crashing on the Simple Form install with "uninitialized constant Devise (NameError)"
     require 'simple_form'
 
+    #Make Heroky stop throwing undefined method `attachment' error for AddAttachmentImageToPins.rb migration
+    require 'paperclip'
+
     # faker app enables creating large numbers of fake names for site testing
     # require 'faker'
 
     # Masonry allows mixed column sizes to be arrayed neatly, automatically, on the page.
-    # require masonry-rails
+    # require 'masonry-rails'
 
   end
 end

@@ -1,5 +1,3 @@
-require 'Paperclip'
-
 class Pin < ActiveRecord::Base
   attr_accessible :description, :image
 
