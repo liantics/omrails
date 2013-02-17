@@ -77,5 +77,8 @@ module Omrails
     # Masonry allows mixed column sizes to be arrayed neatly, automatically, on the page.
     require 'masonry-rails'
 
+    # Amazon S3 simple storage solution for image storage
+    # require 'aws-s3'
+
   end
 end
