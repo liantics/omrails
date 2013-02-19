@@ -22,3 +22,6 @@ doc/
 
 #Ignore the random images uploaded via Paperclip for testing during development
 /public/system
+
+#ignore the amazon s3 access key file.
+/config/s3.yml
