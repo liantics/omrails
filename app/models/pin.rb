@@ -8,9 +8,10 @@ class Pin < ActiveRecord::Base
   															size: {less_than: 5.megabytes}
 
   belongs_to :user
-  has_attached_file :image, styles:{ medium: "320x240>", thumb: "80x60>"},
-  :storage => :s3,
-  :s3_credentials => "#{Rails.root}/config/s3.yml",
-  :path => ":attachment/:id/:style.:extension",
-  :bucket => "omrails_images"
+  has_attached_file :image, styles:{ medium: "320x240>", thumb: "80x60>"} 
+  #commenting out original s3 code if it needs to be reinstated, the comma at the end of this line goes after closing curly bracket on line above,
+ # :storage => :s3,
+ # :s3_credentials => "#{Rails.root}/config/s3.yml",
+ # :path => ":attachment/:id/:style.:extension",
+ # :bucket => "omrails_images"
 end
