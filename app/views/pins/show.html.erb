@@ -4,7 +4,7 @@
 	<div class="span6 offset3">
 		<div class="well">
 			
-			<%= image_tag @pin.image %>
+			<%= image_tag @pin.image(:large), class: "img-rounded img-polaroid" %>
 		
 			<p>
 			  <strong>Image Title:</strong> <%= @pin.description %>
@@ -12,6 +12,7 @@
 			<p>
 			 <strong>Uploaded By:</strong> <%= @pin.user.name %>
 			</p>
+
 			<% if current_user == @pin.user %>
 				<%= link_to 'Replace', edit_pin_path(@pin) %>
 			<% end %> |

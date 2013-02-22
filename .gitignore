@@ -25,3 +25,6 @@ doc/
 
 #ignore the amazon s3 access key file.
 /config/s3.yml
+
+#ignore sample_images folder
+/sample_images/
