@@ -142,8 +142,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-s3
-  aws-sdk
+  aws-s3 (~> 0.6.3)
+  aws-sdk (~> 1.8.2)
   bootstrap-sass (~> 2.2.2.0)
   coffee-rails (~> 3.2.1)
   devise (~> 2.2.3)
