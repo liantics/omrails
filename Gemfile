@@ -24,5 +24,6 @@ group :assets do
   gem 'simple_form', '~> 2.0.4'
   gem 'aws-s3', '~> 0.6.3'
   gem 'aws-sdk', '~> 1.8.2'
+  gem "will_paginate", "~> 3.0.4"
 
 end
