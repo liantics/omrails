@@ -77,5 +77,8 @@ module Omrails
     # Masonry allows mixed column sizes to be arrayed neatly, automatically, on the page.
     require 'masonry-rails'
 
+    # Will paginate breaks pins into pages
+    require 'will_paginate'
+
   end
 end
