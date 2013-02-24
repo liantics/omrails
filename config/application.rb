@@ -62,8 +62,14 @@ module Omrails
     # Recommended by 'Devise' installation to prevent errors when uploading to Heroku
     config.assets.initialize_on_precompile = false
 
+    # Recommended by 'Devise' installation to prevent errors when migrating db on Heroku
+    config.reload_classes_only_on_change = false
+
     #Make Heroku stop crashing on the Devise install with "uninitialized constant Devise (NameError)"
     require 'devise'
+
+    #See if Heroku is giving application error due to active admin gem
+    require 'active_admin'
 
     #Make Heroku stop crashing on the Simple Form install with "uninitialized constant Devise (NameError)"
     require 'simple_form'
