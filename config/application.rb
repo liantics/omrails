@@ -65,6 +65,9 @@ module Omrails
     # Recommended by 'Devise' installation to prevent errors when migrating db on Heroku
     config.reload_classes_only_on_change = false
 
+    # Add font-awesome icons font
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
+
     #Make Heroku stop crashing on the Devise install with "uninitialized constant Devise (NameError)"
     require 'devise'
 

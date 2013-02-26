@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+		
 	  <title>GPH</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
@@ -13,11 +15,8 @@
 		<% end %>
 <body>
 		<%= render 'layouts/header' %>
-
-		<div class="container">
-			<%= yield %>
-			<%= render 'layouts/footer' %>
-		</div>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
 	 
 	</body>
 </html>

@@ -1,5 +1,6 @@
-$baseFontFamily:Oxygen;
+$baseFontFamily: Oxygen, FontAwesome;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
+@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 
 /*Navbar tweaks - line 4*/
 $navbarBackground: lightgreen;
@@ -15,16 +16,21 @@ $btnPrimaryBackground: green;
 $btnPrimaryBackgroundHighlight: lightgreen;
 
 
+
 /*import bootstrap - line 17*/
 @import 'bootstrap';
 
-/*Reduce nav bar spacing from default - not sure how*/
-
-
 /*Set a large padding at page top to accomodate fixed-to-top nav bar - line 19*/
 body{
-	padding-top: 80px;
+	padding-top: 60px;
 }
+
+a:link {
+  color:lightgreen;
+  text-decoration: none;
+}
+a:hover{text-decoration:underline;}
+
 
 .nav li {  
       padding-left: 0px; 
