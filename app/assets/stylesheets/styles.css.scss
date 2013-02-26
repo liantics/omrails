@@ -37,7 +37,7 @@ body{
 
    
     .jumbotron {
-    padding-top:-40px;
+    padding-top:-80px;
     position: relative;
     text-align: center;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(0, 0, 0, 0.075);
@@ -102,6 +102,11 @@ body{
   color: #000;
 }
 
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*specify footer margin, text color, and link color - line 34*/
 .footer {
 	margin-top: 50px;
@@ -135,7 +140,7 @@ body{
   .pins_pagination a {
     text-decoration: none;
     color: black; }
-    .pins_pagination a:hover, .pins_pagination a:focus {
+  .pins_pagination a:hover, .pins_pagination a:focus {
       text-decoration: underline; }
 
 }

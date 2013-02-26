@@ -68,6 +68,9 @@ module Omrails
     #Make Heroku stop crashing on the Devise install with "uninitialized constant Devise (NameError)"
     require 'devise'
 
+    #Make Heroku load sass-rails gem to support active_admin
+    require 'sass-rails'
+
     #See if Heroku is giving application error due to active admin gem
     require 'active_admin'
 
