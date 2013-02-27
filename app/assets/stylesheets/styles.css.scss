@@ -1,6 +1,6 @@
 $baseFontFamily: Oxygen, FontAwesome;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
-@import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+@import "font-awesome";
 
 /*Navbar tweaks - line 4*/
 $navbarBackground: lightgreen;
