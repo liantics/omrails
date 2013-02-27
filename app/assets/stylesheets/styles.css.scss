@@ -1,35 +1,48 @@
-$baseFontFamily: Oxygen, FontAwesome;
+/*Specify the fonts to use for the site, in the order in which they should be used*/
+$baseFontFamily: Oxygen, FontAwesome, Arial;
+
+/*import google's Oxygen font*/
 @import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+/*import font awesome icon font*/
 @import "font-awesome";
 
-/*Navbar tweaks - line 4*/
+/* ************************************************************************ */
+/* Note: If you import twitter bootstrap above navbar and button tweaks, it */
+/* can cause the tweaks to not load. Be sure bootstrap imports happen below */
+/* this section                                                             */
+/* ************************************************************************ */
+
+
+/*Navbar tweaks */
 $navbarBackground: lightgreen;
 $navbarBackgroundHighlight: green;
 $navbarLinkBackgroundHover: lightgreen;
 $navbarBrandColor: white;
 $navbarLinkColor: white;
 
-/*random comment added to force a code update on heroku. Feel free to delete.*/
 
-/*Great big button tweaks - line 11*/
+/*Great big button tweaks */
 $btnPrimaryBackground: green;
 $btnPrimaryBackgroundHighlight: lightgreen;
 
 
 
-/*import bootstrap - line 17*/
+/*import twitter bootstrap css*/
 @import 'bootstrap';
-
-/*Set a large padding at page top to accomodate fixed-to-top nav bar - line 19*/
+/*Set a large padding at page top to accomodate fixed-to-top nav bar*/
 body{
-	padding-top: 60px;
+	padding-top: 30px;
 }
 
 a:link {
-  color:lightgreen;
+  color: green;
   text-decoration: none;
 }
-a:hover{text-decoration:underline;}
+a:hover{
+  color: lightgreen;
+  text-decoration:underline;
+}
 
 
 .nav li {  
@@ -113,40 +126,57 @@ a:hover{text-decoration:underline;}
   margin-left: auto;
 }
 
-/*specify footer margin, text color, and link color - line 34*/
-.footer {
+/*specify footer margin, text color, and link color*/
+#footer {
+  background-color: green;
 	margin-top: 50px;
-	color:$grayLight;
-	a {
-		color: $gray;
-	}
+	color: #FFF;
+}
 
-.pins_pagination {
+#footer a {
+		color: lightgreen;
+	}
+#footer a:visited {
+    color: #DDD;
+  } 
+
+
+#pins_pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   text-align: center;
   padding: 1em;
-  cursor: default; }
-  .pins_pagination a, .pins_pagination span {
-    padding: 0.2em 0.3em; }
-  .pins_pagination .disabled {
+  cursor: default; 
+}
+  
+  .pins_pagination a, .pins_pagination span 
+  {
+    padding: 0.2em 0.3em; 
+  }
+  .pins_pagination .disabled 
+  {
     color: #aaaaaa; }
-  .pins_pagination .current {
+
+  .pins_pagination .current 
+  {
     font-style: normal;
     font-weight: bold;
-    background-color: #bebebe;
+    background-color: lightgreen;
     display: inline-block;
-    width: 1.4em;
+    width: 1em;
     height: 1.4em;
     line-height: 1.5;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
     border-radius: 1em;
-    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; 
+  }
+  
   .pins_pagination a {
     text-decoration: none;
-    color: black; }
+    color: black; 
+  }
   .pins_pagination a:hover, .pins_pagination a:focus {
-      text-decoration: underline; }
+    text-decoration: underline; 
+  }
 
-}
