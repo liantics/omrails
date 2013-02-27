@@ -14,6 +14,9 @@ Omrails::Application.configure do
   # Compress JavaScripts and CSS
   config.assets.compress = true
 
+  # Items to precompile
+  config.assets.precompile = '.woff', '.eot', '.svg', '.ttf'
+
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
 
