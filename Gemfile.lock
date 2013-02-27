@@ -77,6 +77,9 @@ GEM
     faker (1.1.2)
       i18n (~> 0.5)
     fastercsv (1.5.5)
+    font-awesome-sass-rails (3.0.2.2)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     formtastic (2.2.1)
       actionpack (>= 3.0)
     has_scope (0.5.1)
@@ -186,6 +189,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise (~> 2.2.3)
   faker (~> 1.1.2)
+  font-awesome-sass-rails (~> 3.0.2.2)
   jquery-rails
   masonry-rails (~> 0.1.8)
   paperclip (~> 3.4.0)
