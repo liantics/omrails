@@ -12630,26 +12630,26 @@ a:hover {
   color: #DDD;
 }
 
-/* line 147, ../../app/assets/stylesheets/styles.css.scss */
+/*
 #pins_pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
   text-align: center;
   padding: 1em;
-  cursor: default;
+  cursor: default; 
 }
-
-/* line 156, ../../app/assets/stylesheets/styles.css.scss */
+*/
+/* line 157, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a, .pins_pagination span {
   padding: 0.2em 0.3em;
 }
 
-/* line 160, ../../app/assets/stylesheets/styles.css.scss */
+/* line 161, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination .disabled {
   color: #aaaaaa;
 }
 
-/* line 164, ../../app/assets/stylesheets/styles.css.scss */
+/* line 165, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination .current {
   font-style: normal;
   font-weight: bold;
@@ -12667,13 +12667,13 @@ a:hover {
   /*text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; */
 }
 
-/* line 181, ../../app/assets/stylesheets/styles.css.scss */
+/* line 182, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a {
   text-decoration: none;
-  color: black;
+  color: green;
 }
 
-/* line 186, ../../app/assets/stylesheets/styles.css.scss */
+/* line 187, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a:hover, .pins_pagination a:focus {
   text-decoration: underline;
 }
