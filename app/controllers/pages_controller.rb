@@ -5,12 +5,6 @@ class PagesController < ApplicationController
   def learnmore
   end
 
-  def createproject
-  end
-
-  def projectlist
-  end
-
   def successstories
   end
 

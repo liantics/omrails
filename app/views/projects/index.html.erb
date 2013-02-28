@@ -1,13 +1,13 @@
 <div class="hero-unit"><h1>All Projects</h1></div>
 
-<table>
+<table class="table table-hover table-condensed">
   <tr>
     <th>Title</th>
     <th>Blurb</th>
     <th>Description</th>
     <th>Category</th>
     <th>Cost</th>
-    <th>Progressupdate</th>
+    <!-- <th>Progress Update</th> -->
     <th></th>
     <th></th>
     <th></th>
@@ -20,7 +20,7 @@
     <td><%= project.description %></td>
     <td><%= project.category %></td>
     <td><%= project.cost %></td>
-    <td><%= project.progressupdate %></td>
+    <!-- <td><%= project.progressupdate %></td> -->
     <td><%= link_to 'Show', project %></td>
     <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +30,4 @@
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to 'New Project', new_project_path, class: "btn btn-primary btn-large" %>
