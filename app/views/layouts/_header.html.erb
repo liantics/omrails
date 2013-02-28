@@ -44,11 +44,14 @@
             <li><%= link_to "Pins", pins_path %></li>
 
           </ul>
-          <ul class="nav pull-right">
-            <form class="navbar-search">
-                <input type="text" class="input-small search-query" placeholder="Search">
-            </form>
-          </ul>
+          <div id="GPHSearch" class="input-append search">
+            <ul class="nav pull-right">
+              <form class="navbar-search">
+                  <input type="text" class="input-small " placeholder="Search">
+                  <button class="btn btn-primary btn-small"><i class="icon-search icon-white"></i></button>
+              </form>
+            </ul>
+          </div>
     		</div>
 <!-- Nav Elements that aren't hidden at 940px or less, place within here -->
           <ul class="nav pull-right">

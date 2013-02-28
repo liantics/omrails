@@ -142,7 +142,7 @@ a:hover{
     color: #DDD;
   } 
 
-
+/*
 #pins_pagination {
   background: #f1f1f1;
   border: 1px solid #e5e5e5;
@@ -150,7 +150,8 @@ a:hover{
   padding: 1em;
   cursor: default; 
 }
-  
+*/  
+
   .pins_pagination a, .pins_pagination span 
   {
     padding: 0.2em 0.3em; 
@@ -179,9 +180,9 @@ a:hover{
   
   .pins_pagination a {
     text-decoration: none;
-    color: black; 
+    color: green; 
   }
-  
+
   .pins_pagination a:hover, .pins_pagination a:focus {
     text-decoration: underline; 
   }
