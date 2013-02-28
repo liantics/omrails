@@ -1,12 +1,12 @@
 <h1>Replace Image <%= @pin.description %></h1>
+<div class="container">
+	<p>Current Image:</p>
+	<p>
+		<%= image_tag @pin.image (:medium) %>
+	</p>
 
-<p>Current Image:</p>
-<p>
-	<%= image_tag @pin.image (:medium) %>
-</p>
+	<%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back to This Image\'s Page', @pin %> |
-<%= link_to 'Back to All Images', pins_path %>
-
+	<%= link_to 'Back to This Image\'s Page', @pin %> |
+	<%= link_to 'Back to All Images', pins_path %>
+</div>

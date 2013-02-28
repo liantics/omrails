@@ -1,16 +1,17 @@
-<div style="padding-top:10px">
-	<p>
-		<%= link_to "Add Image +", new_pin_path, class: "btn btn-primary btn-large" %>
-	</p>
-</div>
+<div class="container">
+	<div style="padding-top:10px">
+		<p>
+			<%= link_to "Add Image +", new_pin_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
 
-<div id="pins">
-  <%= render @pins %>
-</div>
-<div class="pins_pagination">
+	<div id="pins">
+	  <%= render @pins %>
+	</div>
+	<div class="pins_pagination">
 
-  <%= will_paginate @pins %>
-</div>
-
+	  <%= will_paginate @pins %>
+	</div>
+<div class="container">
  
 

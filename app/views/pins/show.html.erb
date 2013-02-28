@@ -1,24 +1,24 @@
-<h1>Viewing <%= @pin.description %>
-</h1>
-<div class="row">
-	<div class="span6 offset3">
-		<div class="well">
+<h1>Viewing <%= @pin.description %></h1>
+<div class="container">
+	<div class="row">
+		<div class="span6 offset3">
+			<div class="well">
+				
+				<%= image_tag @pin.image(:large), class: "img-rounded img-polaroid" %>
 			
-			<%= image_tag @pin.image(:large), class: "img-rounded img-polaroid" %>
-		
-			<p>
-			  <strong>Image Title:</strong> <%= @pin.description %>
-			</p>
-			<p>
-			 <strong>Uploaded By:</strong> <%= @pin.user.name %>
-			</p>
+				<p>
+				  <strong>Image Title:</strong> <%= @pin.description %>
+				</p>
+				<p>
+				 <strong>Uploaded By:</strong> <%= @pin.user.name %>
+				</p>
 
-			<% if current_user == @pin.user %>
-				<%= link_to 'Replace', edit_pin_path(@pin) %>
-			<% end %> |
+				<% if current_user == @pin.user %>
+					<%= link_to 'Replace', edit_pin_path(@pin) %>
+				<% end %> |
 
-			<%= link_to 'Back to All Images', pins_path %>
-	</div>
+				<%= link_to 'Back to All Images', pins_path %>
+			</div>
+		</div>
 	</div>
 </div>
-
