@@ -1,0 +1,16 @@
+<%= simple_form_for(@project, html: {class: "form-horizontal"}) do |f| %>
+  <%= f.error_notification %>
+
+  
+    <%= f.input :title %>
+    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: '1 to 2 line description' %>
+    <%= f.input :description, as: :text, input_html: {rows: "3"}, placeholder: 'In-depth description of project' %>
+    <%= f.input :category, collection: @meta_type, as: :grouped_select, group_method: :types %>
+    <%= f.input :cost, placeholder: 'example: 576.00' %>
+    <%= f.input :progressupdate, as: :text, input_html: {rows: "3"}, label:'Update', placeholder: 'Optional - describe any progress that has already been made on this project.' %>
+
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

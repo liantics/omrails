@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  blurb: MyString
+  description: MyString
+  category: MyString
+  cost: 9.99
+  progressupdate: MyString
+
+two:
+  title: MyString
+  blurb: MyString
+  description: MyString
+  category: MyString
+  cost: 9.99
+  progressupdate: MyString

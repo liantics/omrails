@@ -1,0 +1,33 @@
+<div class="hero-unit"><h1>All Projects</h1></div>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Blurb</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Cost</th>
+    <th>Progressupdate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.title %></td>
+    <td><%= project.blurb %></td>
+    <td><%= project.description %></td>
+    <td><%= project.category %></td>
+    <td><%= project.cost %></td>
+    <td><%= project.progressupdate %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', new_project_path %>

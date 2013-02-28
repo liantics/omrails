@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130221230843) do
+ActiveRecord::Schema.define(:version => 20130228191421) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -59,6 +59,17 @@ ActiveRecord::Schema.define(:version => 20130221230843) do
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
+
+  create_table "projects", :force => true do |t|
+    t.string   "title"
+    t.string   "blurb"
+    t.string   "description"
+    t.string   "category"
+    t.decimal  "cost"
+    t.string   "progressupdate"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
