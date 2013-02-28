@@ -1,16 +1,16 @@
 	<div class="hero-unit"><h1>Popular Projects</h1></div>
 	<div class="content">
 		<p>
-			<%= link_to "Add Your Fvorite +", new_pin_path, class: "btn btn-primary btn-large" %>
+			<%= link_to "Add Your Favorite +", new_pin_path, class: "btn btn-primary btn-large" %>
 		</p>
 	
 
-	<div id="pins">
-	  <%= render @pins %>
-	</div>
+		<div id="pins">
+		  <%= render @pins %>
+		</div>
 
-	<div class="pins_pagination">
-			<%= will_paginate @pins %>
-	</div>
+		<div class="pins_pagination">
+				<%= will_paginate @pins %>
+		</div>
 
 </div>
