@@ -71,9 +71,6 @@ a:hover{
     color: rgb(255, 255, 255);
   }
 
-  .container {
-      margin-top: 30px;
-  }
 
 /*import the responsive bootstrap layout - line 24*/
 @import 'bootstrap-responsive';
@@ -115,6 +112,7 @@ a:hover{
   text-decoration: underline;
   padding-left: 2px;
 }
+
 .box a:hover{
   color: #333;
 }
@@ -183,6 +181,7 @@ a:hover{
     text-decoration: none;
     color: black; 
   }
+  
   .pins_pagination a:hover, .pins_pagination a:focus {
     text-decoration: underline; 
   }
