@@ -1,35 +1,39 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="hero-unit">
+    <h1><%= @project.title %>
+    </h1>
+  </div>
 
-<p>
-  <b>Title:</b>
-  <%= @project.title %>
-</p>
+    <p>
+    <b>Blurb:</b>
+    <%= @project.blurb %>
+    </p>
 
-<p>
-  <b>Blurb:</b>
-  <%= @project.blurb %>
-</p>
+    <p>
+      <b>Description:</b>
+      <%= @project.description %>
+    </p>
 
-<p>
-  <b>Description:</b>
-  <%= @project.description %>
-</p>
+    <p>
+      <b>Category:</b>
+      <%= @project.category %>
+    </p>
 
-<p>
-  <b>Category:</b>
-  <%= @project.category %>
-</p>
+    <p>
+      <b>Cost:</b>
+       $<%= @project.cost %>
+    </p>
 
-<p>
-  <b>Cost:</b>
-  <%= @project.cost %>
-</p>
-
-<p>
-  <b>Progressupdate:</b>
-  <%= @project.progressupdate %>
-</p>
+    <p>
+      <b>Progress Update:</b>
+      <%= @project.progressupdate %>
+    </p>
 
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+  <% if current_user == @project.user %>
+       <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary btn-large' %> &nbsp;
+       <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?', class: 'btn btn-primary btn-large' } %>
+
+  <% end %>
+  <%= link_to 'Back', projects_path, class: 'btn btn-primary btn-large' %>
+</div>
