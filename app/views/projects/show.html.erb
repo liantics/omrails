@@ -32,7 +32,7 @@
 
   <% if current_user == @project.user %>
        <%= link_to 'Edit', edit_project_path(@project), class: 'btn btn-primary btn-large' %> &nbsp;
-       <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?', class: 'btn btn-primary btn-large' } %>
+       <%= link_to 'Delete', @project, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-primary btn-large'  %>
 
   <% end %>
   <%= link_to 'Back', projects_path, class: 'btn btn-primary btn-large' %>
