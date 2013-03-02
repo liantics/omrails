@@ -62,7 +62,7 @@ class ProjectsController < ApplicationController
     @project = current_user.projects.find(params[:id])
 
     respond_to do |format|
-      if @project.update_attributes(params[:ProjectsController])
+      if @project.update_attributes(params[:project])
         format.html { redirect_to @project, notice: 'Project was successfully updated.' }
         format.json { head :no_content }
       else
