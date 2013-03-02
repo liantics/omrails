@@ -6,11 +6,11 @@
     <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: '1 to 2 line description' %>
     <%= f.input :description, as: :text, input_html: {rows: "3"}, placeholder: 'In-depth description of project' %>
     <%= f.input :category, collection: @meta_type, as: :grouped_select, group_method: :types %>
-    <%= f.input :cost, placeholder: 'example: 576.00', label: 'Cost: $' %>
+    <%= f.input :cost, label: 'Project Cost: $' %>
 
     <! -- if project has no title, assume it's new and has no updates, hide update field -->
     <% if @project.title? %> 
-      <%= f.input :progressupdate, as: :text, input_html: {rows: "3"}, label:'Update', placeholder: 'Optional - describe any progress that has already been made on this project.', placeholder: 'New project/no update.' %>
+      <%= f.input :progressupdate, as: :text, input_html: {rows: "3"}, label:'Update', placeholder: 'Optional - describe any progress that has already been made on this project.', placeholder: 'Describe any progress on your project.' %>
     <% end %>
 
   <div class="form-actions">

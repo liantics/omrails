@@ -1,6 +1,8 @@
-<h1>Editing project</h1>
+<div class='hero-unit'> <h1>Editing Project: <%= @project.title %></h1></div>
+<div class='content'>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+	<%= render 'form' %>
+	
+	<%= link_to 'Back to this Project\'s Page', @project, class: "btn btn-primary btn-large" %> 
+	<%= link_to 'View All Projects', projects_path, class: "btn btn-primary btn-large" %>
+</div>

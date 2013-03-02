@@ -1,12 +1,11 @@
 Omrails::Application.routes.draw do
-  resources :projects
 
 
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :pins
+  resources :pins, :projects
 
 
   devise_for :users
@@ -14,10 +13,6 @@ Omrails::Application.routes.draw do
   root :to => 'pages#home'
   
   get 'learnmore' => 'pages#learnmore'
-
-  get 'createproject' => 'pages#createproject'
-
-  get 'projectlist' => 'pages#projectlist'
 
   get 'successstories' => 'pages#successstories'
 

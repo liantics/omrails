@@ -1,0 +1,17 @@
+<div class="box">
+
+  <p class="description">
+  	<%= project.blurb %>
+  </p>
+  <p>
+		<strong>
+			Posted by <%= project.user.name %>
+		</strong>
+	</p>
+	<% if current_user == project.user %>
+		<p>
+		<%= link_to 'Edit', edit_project_path(project) %> &nbsp;
+		<%= link_to 'Delete', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</p>
+	<% end %>
+</div>
