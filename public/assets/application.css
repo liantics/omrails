@@ -12561,8 +12561,21 @@ a:hover {
 	@include box-shadow(none !important);
 	border:0;
 }*/
+/* line 86, ../../app/assets/stylesheets/styles.css.scss */
+.hero-unit {
+  /*background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 100%) repeat scroll 0% 0% transparent;*/
+  background: dce8dc;
+  color: #003800;
+  /*border: 1px solid rgb(224, 224, 224);*/
+  box-shadow: 1px 1px 5px gray;
+  /*#d4ffaa*/
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding: 20px 20px 20px;
+}
+
 /*Used by jQuery Masonry for "pinterest style" self-adjusting image block layout */
-/* line 88, ../../app/assets/stylesheets/styles.css.scss */
+/* line 99, ../../app/assets/stylesheets/styles.css.scss */
 .box {
   margin: 5px;
   padding: 5px;
@@ -12578,7 +12591,7 @@ a:hover {
   width: 214px;
 }
 
-/* line 103, ../../app/assets/stylesheets/styles.css.scss */
+/* line 114, ../../app/assets/stylesheets/styles.css.scss */
 .box img {
   display: block;
   width: 100%;
@@ -12587,25 +12600,25 @@ a:hover {
   border-radius: 5px;
 }
 
-/* line 111, ../../app/assets/stylesheets/styles.css.scss */
+/* line 122, ../../app/assets/stylesheets/styles.css.scss */
 .box a {
   color: #666;
   text-decoration: underline;
   padding-left: 2px;
 }
 
-/* line 117, ../../app/assets/stylesheets/styles.css.scss */
+/* line 128, ../../app/assets/stylesheets/styles.css.scss */
 .box a:hover {
   color: #333;
 }
 
-/* line 121, ../../app/assets/stylesheets/styles.css.scss */
+/* line 132, ../../app/assets/stylesheets/styles.css.scss */
 .description {
   margin: 10px 0px 5px;
   color: #000;
 }
 
-/* line 126, ../../app/assets/stylesheets/styles.css.scss */
+/* line 137, ../../app/assets/stylesheets/styles.css.scss */
 .center {
   margin-right: auto;
   margin-left: auto;
@@ -12613,19 +12626,19 @@ a:hover {
 }
 
 /*specify footer margin, text color, and link color*/
-/* line 133, ../../app/assets/stylesheets/styles.css.scss */
+/* line 144, ../../app/assets/stylesheets/styles.css.scss */
 #footer {
   background-color: green;
   margin-top: 50px;
   color: #FFF;
 }
 
-/* line 139, ../../app/assets/stylesheets/styles.css.scss */
+/* line 150, ../../app/assets/stylesheets/styles.css.scss */
 #footer a {
   color: lightgreen;
 }
 
-/* line 142, ../../app/assets/stylesheets/styles.css.scss */
+/* line 153, ../../app/assets/stylesheets/styles.css.scss */
 #footer a:visited {
   color: #DDD;
 }
@@ -12639,17 +12652,22 @@ a:hover {
   cursor: default; 
 }
 */
-/* line 157, ../../app/assets/stylesheets/styles.css.scss */
+/* line 168, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a, .pins_pagination span {
   padding: 0.2em 0.3em;
 }
 
-/* line 161, ../../app/assets/stylesheets/styles.css.scss */
+/* line 172, ../../app/assets/stylesheets/styles.css.scss */
+.pins_pagination {
+  text-align: center;
+}
+
+/* line 177, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination .disabled {
   color: #aaaaaa;
 }
 
-/* line 165, ../../app/assets/stylesheets/styles.css.scss */
+/* line 181, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination .current {
   font-style: normal;
   font-weight: bold;
@@ -12667,13 +12685,13 @@ a:hover {
   /*text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; */
 }
 
-/* line 182, ../../app/assets/stylesheets/styles.css.scss */
+/* line 198, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a {
   text-decoration: none;
   color: green;
 }
 
-/* line 187, ../../app/assets/stylesheets/styles.css.scss */
+/* line 203, ../../app/assets/stylesheets/styles.css.scss */
 .pins_pagination a:hover, .pins_pagination a:focus {
   text-decoration: underline;
 }

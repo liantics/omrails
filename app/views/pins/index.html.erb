@@ -5,12 +5,13 @@
 		</p>
 	
 
-		<div id="pins">
-		  <%= render @pins %>
-		</div>
-
+	<div id="pins">
+		 <%= render @pins %>
+	</div>
+	<div class="form-actions">
 		<div class="pins_pagination">
-				<%= will_paginate @pins %>
+			<%= will_paginate @pins %>
 		</div>
+	</div>
 
 </div>
