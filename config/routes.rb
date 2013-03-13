@@ -5,7 +5,7 @@ Omrails::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :pins, :projects
+  resources :pins, :projects, :charges
 
 
   devise_for :users

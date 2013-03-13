@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
 
 group :production do
 	gem 'pg'
