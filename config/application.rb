@@ -62,6 +62,10 @@ module Omrails
     # Recommended by 'Devise' installation to prevent errors when uploading to Heroku
     config.assets.initialize_on_precompile = false
 
+    # Precompile additional assets to fix active admin css not precompiled error on heroku. 
+    # Defaults to [application.js, application.css, non-JS/CSS]
+    config.assets.precompile += ['active_admin.css', 'active_admin.js'] 
+
     # Recommended by 'Devise' installation to prevent errors when migrating db on Heroku
     config.reload_classes_only_on_change = false
 
@@ -80,7 +84,7 @@ module Omrails
     #Make Heroku stop crashing on the Simple Form install with "uninitialized constant Devise (NameError)"
     require 'simple_form'
 
-    #Make Heroky stop throwing undefined method `attachment' error for AddAttachmentImageToPins.rb migration
+    #Make Heroku stop throwing undefined method `attachment' error for AddAttachmentImageToPins.rb migration
     require 'paperclip'
 
     # faker app enables creating large numbers of fake names for site testing
@@ -89,7 +93,7 @@ module Omrails
     # Masonry allows mixed column sizes to be arrayed neatly, automatically, on the page.
     require 'masonry-rails'
 
-    # Will paginate breaks pins into pages
+    # Will paginate breaks one big page into multiple pages
     require 'will_paginate'
 
   end

@@ -1,4 +1,2 @@
-#One Month Rails
-This is the sample application for
-[*One Month Rails: Teach Yourself to Code] (http://onemonthrails.com)
-by [Mattan Griffel] (http://mattanfriffel.com)
+#Green Planet Heroes
+This is the closed beta for [Green Planet Heroes](http://www.greenplanetheroes.com)
