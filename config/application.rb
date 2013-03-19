@@ -4,9 +4,9 @@ require 'rails/all'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  # Bundler.require(*Rails.groups(:assets => %w(development test)))
+    Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
-  Bundler.require(:default, :assets, Rails.env)
+  # Bundler.require(:default, :assets, Rails.env)
 end
 
 module Omrails
@@ -64,7 +64,7 @@ module Omrails
 
     # Precompile additional assets to fix active admin css not precompiled error on heroku. 
     # Defaults to [application.js, application.css, non-JS/CSS]
-    config.assets.precompile += ['active_admin.css', 'active_admin.js'] 
+    config.assets.precompile += ['active_admin.css', 'active_admin.js', 'application.css', 'charges.css.scss', 'pages.css.scss', 'styles.css.scss', 'application.js', 'charges.js.coffee', 'pages.js.coffee', 'projects.js.coffee'] 
 
     # Recommended by 'Devise' installation to prevent errors when migrating db on Heroku
     config.reload_classes_only_on_change = false
