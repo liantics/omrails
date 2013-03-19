@@ -7,7 +7,6 @@ Omrails::Application.routes.draw do
 
   resources :pins, :projects, :charges
 
-
   devise_for :users
 
   root :to => 'pages#home'
