@@ -1,0 +1,205 @@
+/*Specify the fonts to use for the site, in the order in which they should be used*/
+$baseFontFamily: Oxygen, FontAwesome, Arial;
+
+/*import google's Oxygen font*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+
+/*import font awesome icon font*/
+@import "font-awesome";
+
+/* ************************************************************************ */
+/* Note: If you import twitter bootstrap above navbar and button tweaks, it */
+/* can cause the tweaks to not load. Be sure bootstrap imports happen below */
+/* this section                                                             */
+/* ************************************************************************ */
+
+
+/*Navbar tweaks */
+$navbarBackground: lightgreen;
+$navbarBackgroundHighlight: green;
+$navbarLinkBackgroundHover: lightgreen;
+$navbarBrandColor: white;
+$navbarLinkColor: white;
+
+
+/*Great big button tweaks */
+$btnPrimaryBackground: green;
+$btnPrimaryBackgroundHighlight: lightgreen;
+
+
+
+/*import twitter bootstrap css*/
+@import 'bootstrap';
+/*Set a large padding at page top to accomodate fixed-to-top nav bar*/
+body{
+	padding-top: 30px;
+}
+
+a:link {
+  color: lightgreen;
+  text-decoration: none;
+}
+a:hover{
+  color: lightgreen;
+  text-decoration:underline;
+}
+
+
+.nav li {  
+      padding-left: 0px; 
+      padding-right: 0px;   
+      }  
+
+   .marketing-byline, h1, h2 {
+      text-align: center;
+   }
+
+   
+    .jumbotron {
+    padding-top:-80px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(0, 0, 0, 0.075);
+    background: linear-gradient(45deg, rgb(2, 54, 2) 0%, rgb(6, 153, 6) 100%) repeat scroll 0% 0% transparent;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2) inset, 0px -3px 7px rgba(0, 0, 0, 0.2) inset;
+  }
+
+
+  .masthead{
+    padding: 70px 0px 80px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+  }
+
+
+/*import the responsive bootstrap layout - line 24*/
+@import 'bootstrap-responsive';
+
+/*kill the box shadow on the nav bar - line 27
+.navbar-inner{
+
+	@include box-shadow(none !important);
+	border:0;
+}*/
+
+.hero-unit {
+    /*background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(229, 229, 229) 100%) repeat scroll 0% 0% transparent;*/
+    background: dce8dc;
+    color: #003800;
+    /*border: 1px solid rgb(224, 224, 224);*/ 
+    box-shadow: 1px 1px 5px gray; /*#d4ffaa*/
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 20px 20px 20px;
+}
+
+/*Used by jQuery Masonry for "pinterest style" self-adjusting image block layout */
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  font-size: 11px;
+  color: #000;
+  line-height: 1.4em;
+  float: left;
+  background-color: grayLight;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #458B00;
+  width: 214px;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.box a {
+  color: #666;
+  text-decoration: underline;
+  padding-left: 2px;
+}
+
+.box a:hover{
+  color: #333;
+}
+
+.description {
+  margin: 10px 0px 5px;
+  color: #000;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+/*specify footer margin, text color, and link color*/
+#footer {
+  background-color: green;
+	margin-top: 50px;
+	color: #FFF;
+}
+
+#footer a {
+		color: lightgreen;
+	}
+#footer a:visited {
+    color: #DDD;
+  } 
+
+/*
+#pins_pagination {
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default; 
+}
+*/  
+ 
+  .pins_pagination a, .pins_pagination span 
+  {
+    padding: 0.2em 0.3em; 
+  }
+
+  .pins_pagination {
+    text-align: center;
+  }
+
+  .pins_pagination .disabled 
+  {
+    color: #aaaaaa; }
+
+  .pins_pagination .current 
+  {
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    /* background-color: lightgreen; */
+    background: linear-gradient(45deg, lightgreen 0%, rgb(6, 153, 6) 100%) repeat scroll 0% 0% transparent;
+    text-align: center;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    /*text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; */
+  }
+  
+  .pins_pagination a {
+    text-decoration: none;
+    color: green; 
+  }
+
+  .pins_pagination a:hover, .pins_pagination a:focus {
+    text-decoration: underline; 
+  }
+
