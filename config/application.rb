@@ -64,7 +64,7 @@ module Omrails
 
     # Precompile additional assets to fix active admin css not precompiled error on heroku. 
     # Defaults to [application.js, application.css, non-JS/CSS]
-    config.assets.precompile += ['active_admin.css', 'active_admin.js', 'application.css', 'charges.css.scss', 'pages.css.scss', 'styles.css.scss', 'application.js', 'charges.js.coffee', 'pages.js.coffee', 'projects.js.coffee'] 
+    config.assets.precompile += ['application.css'] 
 
     # Recommended by 'Devise' installation to prevent errors when migrating db on Heroku
     config.reload_classes_only_on_change = false
