@@ -4,7 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-#suppresses the deprecation warnings from heroku
-ActiveSupport::Deprecation.silenced = true  
-
 Omrails::Application.load_tasks

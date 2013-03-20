@@ -1,36 +1,17 @@
 <%= simple_form_for(@project, html: {class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
 
-  <ul class="thumbnails">
-  <li class="span6">
+  
     <%= f.input :title %>
-    <%= f.input :description, as: :text, input_html: {rows: "7"}, placeholder: 'In-depth description of project' %>
+    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: '1 to 2 line description' %>
+    <%= f.input :description, as: :text, input_html: {rows: "3"}, placeholder: 'In-depth description of project' %>
     <%= f.input :category, collection: @meta_type, as: :grouped_select, group_method: :types %>
-    <%= f.input :cost, label: 'Project Cost: $', placeholder: 'estimated cost' %>
+    <%= f.input :cost, label: 'Project Cost: $' %>
 
     <! -- if project has no title, assume it's new and has no updates, hide update field -->
     <% if @project.title? %> 
       <%= f.input :progressupdate, as: :text, input_html: {rows: "3"}, label:'Update', placeholder: 'Optional - describe any progress that has already been made on this project.', placeholder: 'Describe any progress on your project.' %>
     <% end %>
-  </li>
-  <li class="span6">
-    Donation Level 1 (*need to add donation levels and invoices to model)
-    <%= f.input :blurb, as: :text, input_html: {rows: "1"}, placeholder: 'Dollar amount, no decimals' %>
-    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: 'Describe the thank you gift you\'re offering for this donation level' %>
-
-    Donation Level 2
-    <%= f.input :blurb, as: :text, input_html: {rows: "1"}, placeholder: 'Dollar amount, no decimals' %>
-    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: 'Describe the thank you gift you\'re offering for this donation level' %>
-
-    Donation Level 3
-        <%= f.input :blurb, as: :text, input_html: {rows: "1"}, placeholder: 'Dollar amount, no decimals' %>
-    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: 'Describe the thank you gift you\'re offering for this donation level' %>
-
-    Donation Level 4
-        <%= f.input :blurb, as: :text, input_html: {rows: "1"}, placeholder: 'Dollar amount, no decimals' %>
-    <%= f.input :blurb, as: :text, input_html: {rows: "2"}, placeholder: 'Describe the thank you gift you\'re offering for this donation level' %>
-
-  </li></ul>
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>
