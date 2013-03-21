@@ -15,7 +15,7 @@ Omrails::Application.configure do
   config.assets.compress = true
 
   # Items to precompile
-  config.assets.precompile = '.woff', '.eot', '.svg', '.ttf'
+  config.assets.precompile = '.woff', '.eot', '.svg', '.ttf', '.css', '.js'
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
   config.assets.compile = false
