@@ -92,5 +92,8 @@ module Omrails
     # Will paginate breaks pins into pages
     require 'will_paginate'
 
+    #See if this makes heroku recognize active admin"
+    require 'activeadmin'
+
   end
 end

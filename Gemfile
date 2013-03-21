@@ -28,7 +28,7 @@ group :assets do
   gem 'aws-s3', '~> 0.6.3'
   gem 'aws-sdk', '~> 1.8.2'
   gem "will_paginate", "~> 3.0.4"
-  gem 'activeadmin'
+  gem 'activeadmin', "~> 0.5.1"
   gem "font-awesome-sass-rails", "~> 3.0.2.2"
 
 end
