@@ -192,7 +192,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (~> 0.5.1)
   aws-s3 (~> 0.6.3)
   aws-sdk (~> 1.8.2)
   bootstrap-sass (~> 2.2.2.0)
