@@ -7,3 +7,5 @@ active_admin.css: active_admin-90609299a46139379c83b41e2efa617b.css
 active_admin/index.css: active_admin-90609299a46139379c83b41e2efa617b.css
 application.css: application-8cd9c72948059e32507278316877c688.css
 application/index.css: application-8cd9c72948059e32507278316877c688.css
+active_admin/print.css: active_admin/print-80ebe25ed30c2f719a2720c7dffad181.css
+active_admin/print/index.css: active_admin/print-80ebe25ed30c2f719a2720c7dffad181.css
