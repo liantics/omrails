@@ -1,0 +1,61 @@
+class ApprovalController < ApplicationController
+    before_filter :authenticate_user!, except: [:index, :show]
+    before_filter do
+    	redirect_to index_path unless user_signed_in?&&current_user.admin?
+    end
+
+  # GET /pins
+  # GET /pins.json
+  def index
+    @pins = Pin.order("created_at desc").paginate(:page => params[:page], :per_page =>50)
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @pins }
+    end
+  end
+
+  # GET /pins/1
+  # GET /pins/1.json
+  def show
+    @pin = Pin.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @pin }
+    end
+  end
+
+  # GET /pins/1/edit
+  def edit
+    @pin = Pin.find(params[:id])
+  end
+
+  # PUT /pins/1
+  # PUT /pins/1.json
+  def update
+    @pin = Pin.find(params[:id])
+
+    respond_to do |format|
+      if @pin.update_attributes(params[:pin])
+        format.html { redirect_to approval_index_path, notice: 'Pin was successfully approved.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @pin.errors, status: :unprocessable_entity }
+      end
+    end
+
+  # DELETE /pins/1
+  # DELETE /pins/1.json
+  def destroy
+    @pin = pins.find(params[:id])
+    @pin.destroy
+
+    respond_to do |format|
+      format.html { redirect_to pins_url }
+      format.json { head :no_content }
+    end
+  end
+end
+end

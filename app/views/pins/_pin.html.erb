@@ -1,6 +1,7 @@
 <div class="box">
 	<%= link_to (image_tag pin.image (:medium)), pin %>
 
+
   <p class="description">
   	<%= pin.description %>
   </p>
@@ -15,4 +16,5 @@
 		<%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 		</p>
 	<% end %>
+	
 </div>

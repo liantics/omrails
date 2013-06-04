@@ -90,6 +90,8 @@ a:hover{
     box-shadow: 1px 1px 5px gray; /*#d4ffaa*/
     margin-bottom: 40px;
     margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
     padding: 20px 20px 20px;
 }
 
@@ -224,3 +226,11 @@ TO GIVE HERO UNIT AN IMAGE BACKGROUND:
     text-decoration: underline; 
   }
 
+  .approved {
+    background-color: gray;
+  }
+
+  .approval {
+    color: white;
+    background-color: red;
+  }

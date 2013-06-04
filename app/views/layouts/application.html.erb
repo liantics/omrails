@@ -6,12 +6,9 @@
 	  <title>Green Planet Heroes</title>
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
-
-	  /*include stripe credit card processing javascript*/
-	  <% javascript_include_tag "https://js.stripe.com/v2/", "application" %> 
 	  <%= csrf_meta_tags %>
-	  /*set a site-wide tag that contains the stripe public key, making the key available to the javascript*/
-	  <%= tag :meta, :name=> "stripe-key", &crarr; :content=> STRIPE_PUBLIC_KEY %>
+	
+
 
 	</head>
 	

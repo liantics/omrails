@@ -4,8 +4,8 @@ class PinsController < ApplicationController
   # GET /pins
   # GET /pins.json
   def index
-    @pins = Pin.order("created_at desc").paginate(:page => params[:page], :per_page =>10)
-    
+    @pins = Pin.where(approved: true).order("created_at desc").paginate(:page => params[:page], :per_page =>10)
+    @admin = user_signed_in?&&current_user.admin?
 
     respond_to do |format|
       format.html # index.html.erb

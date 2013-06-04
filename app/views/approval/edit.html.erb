@@ -1,0 +1,15 @@
+<div class="hero-unit"><h1>Change Approval Status: <%= @pin.description %></h1></div>
+<div class="container">
+	<p>Current Image:</p>
+	<p>
+     <%= image_tag @pin.image %>
+  </p>
+  <p>   
+    <%= @pin.description %>
+  </p>
+
+	<%= render 'form' %>
+
+	<%= link_to 'Back to Approvals Page', approval_path %> |
+	
+</div>

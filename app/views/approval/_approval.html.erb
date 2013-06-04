@@ -1,0 +1,24 @@
+<div class="box">
+	<%= link_to (image_tag pin.image (:medium)), pin %>
+
+  <p class="description">
+  	<%= pin.description %>
+  </p>
+  <p>
+		<strong>
+			Posted by <%= pin.user.name %>
+		</strong>
+	</p>
+	<% if pin.approved? %>
+		<div class="approved">
+			<p>Approved</p>
+		</div>
+	<% else %>
+		<div class="approval">
+			Awaiting Approval
+			</p>
+		</div>
+	<% end %>
+
+	<%= link_to "Change Approval Status", edit_approval_path(pin) %> &nbsp;
+</div>

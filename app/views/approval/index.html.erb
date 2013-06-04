@@ -1,0 +1,16 @@
+	<div class="hero-unit"><h1>Approve Pins</h1>
+
+
+	</div>
+	<div class="content">
+
+	<div id="pins">
+		 <%= render partial: 'approval', collection: @pins, as: :pin %>
+	</div>
+	<div class="form-actions">
+		<div class="pins_pagination">
+			<%= will_paginate @pins %>
+		</div>
+	</div>
+
+</div>

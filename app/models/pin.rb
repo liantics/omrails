@@ -3,8 +3,8 @@ require 'timeout'
 
 class Pin < ActiveRecord::Base
 
-  attr_accessor :image_url
-  attr_accessible :description, :image, :image_remote_url, :image_url
+  attr_accessor :image_url, :image_remote_url
+  attr_accessible :description, :image, :image_remote_url, :image_url, :approved
 
 
   before_validation :download_remote_image, :if => lambda { |pin| pin.image_url.present? }
@@ -39,7 +39,7 @@ class Pin < ActiveRecord::Base
   def download_remote_image
     return if self.image.present?
     begin
-      Timeout::timeout(2) do
+      Timeout::timeout(4) do
         self.image = URI.parse(image_url)
         self.image_remote_url = image_url
       end

@@ -40,7 +40,7 @@ Omrails::Application.configure do
   config.assets.debug = true
 
   #attempting to fix paperclip crash
-  Paperclip.options[:command_path] = "/usr/local/bin/"
+  Paperclip.options[:command_path] = "#{config.root}/usr/local/bin/"
 
   config.paperclip_defaults = {
       :storage => :s3,

@@ -1,0 +1,16 @@
+
+<%= simple_form_for(@pin, :url => approval_path, html: {class: "form-horizontal"}) do |f| %>
+	<! Error commands >
+  <%= f.error_notification %>
+  <%= f.full_error :image_file_size, class: "alert alert-error" %>
+  <%= f.full_error :image_content_type, class: "alert alert-error" %>
+
+  <p>
+    Approved? &nbsp; <%= f.check_box :approved, {}, 'true', 'false' %>
+  </p>
+
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

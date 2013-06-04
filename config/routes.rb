@@ -1,16 +1,13 @@
 Omrails::Application.routes.draw do
 
 
-  resources :donations
-
-
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :pins, :projects, :charges
+  resources :pins, :projects, :charges, :approval
 
-  devise_for :users
+  devise_for :users, :pins, :projects
 
   root :to => 'pages#home'
   
